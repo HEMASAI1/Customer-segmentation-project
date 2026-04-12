@@ -3,20 +3,20 @@
 
 Segment retail customers based on real purchasing behavior using **RFM Analysis + HDBSCAN Clustering** — and visualize actionable insights through an interactive business dashboard.
 
+🔗 **Live Demo:** [customer-segmentation-data-analytics-project.streamlit.app](https://customer-segmentation-data-analytics-project.streamlit.app/)
+
 ---
 
 ## 📸 Demo
 
-### 🖥️ Live Dashboard
-![Dashboard Overview](images/dashboard_overview.png)
+### 🖥️ Customer Segmentation Dashboard — KPIs & Customer Lookup
+![Dashboard Overview](images/dashboard.png)
 
-| 🔍 Customer Lookup & Segment Strategy | 🔮 Churn Risk Prediction |
-|---|---|
-| ![Customer Details](images/customer_details.png) | ![Churn Prediction](images/churn_prediction.png) |
+### 🔮 Churn Prediction & Customer Insights
+![Churn Prediction](images/dashboard2.png)
 
-| 📊 Segment Distribution | 💰 Revenue by Segment |
-|---|---|
-| ![Segments](images/segment_distribution.png) | ![Revenue](images/revenue_by_segment.png) |
+### 📊 Segment Distribution & Churn Analysis
+![Segment Analysis](images/dashboard3.png)
 
 ---
 
@@ -40,7 +40,7 @@ This project builds a **data-driven customer intelligence system** that:
 1. Analyses every customer's purchasing history using **RFM metrics** (Recency, Frequency, Monetary)
 2. Automatically groups customers into meaningful segments using **density-based clustering**
 3. Predicts which customers are at risk of churning — *before they leave*
-4. Delivers a real-time **Streamlit dashboard** so business teams can act on insights instantly
+4. Delivers a **live Streamlit dashboard** so business teams can act on insights instantly
 
 > 📌 Result: 4,308 customers segmented into 7 actionable groups from a dataset of 500K+ transactions.
 
@@ -93,6 +93,7 @@ This project builds a **data-driven customer intelligence system** that:
 | Statistics | `SciPy` (Z-score outlier detection) |
 | Visualisation | `Plotly` |
 | Dashboard | `Streamlit` |
+| Deployment | `Streamlit Community Cloud` |
 
 ---
 
@@ -114,6 +115,10 @@ customer-segmentation/
 │   └── app.py                         # Streamlit dashboard (KPIs, churn, charts)
 │
 ├── images/                            # Screenshots for README
+│   ├── dashboard.png
+│   ├── dashboard2.png
+│   └── dashboard3.png
+│
 ├── models/                            # Saved model artifacts
 ├── requirements.txt
 └── README.md
@@ -144,6 +149,8 @@ jupyter notebook notebooks/02_clustering.ipynb
 streamlit run src/app.py
 ```
 
+> 🌐 Or skip setup entirely — use the **[live deployed app](https://customer-segmentation-data-analytics-project.streamlit.app/)**
+
 ---
 
 ## 🔮 How the Churn Score Works
@@ -164,7 +171,7 @@ Churn Score = (0.5 × Recency) + (0.3 × Frequency) + (0.2 × Monetary)
 
 ## 🗂️ Dataset
 
-- **Source:** [UCI Machine Learning Repository — Online Retail](https://archive.ics.uci.edu/ml/datasets/online+retail)
+- **Source:** [Kaggle — E-Commerce Data]([https://archive.ics.uci.edu/ml/datasets/online+retail](https://www.kaggle.com/datasets/carrie1/ecommerce-data))
 - **Period:** December 2010 – December 2011
 - **Records:** ~541,000 transactions
 - **Customers:** ~4,300 unique (after cleaning)
@@ -180,7 +187,7 @@ This project is licensed under the **MIT License** — see [LICENSE](LICENSE) fo
 
 ## 🙌 Acknowledgements
 
-- Dataset: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/online+retail)
+- Dataset: [UCI Machine Learning Repository]([https://archive.ics.uci.edu/ml/datasets/online+retail](https://www.kaggle.com/datasets/carrie1/ecommerce-data))
 - Clustering: [HDBSCAN Documentation](https://hdbscan.readthedocs.io/)
 - Dashboard: [Streamlit](https://streamlit.io/)
 
