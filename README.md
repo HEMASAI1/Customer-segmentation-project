@@ -3,7 +3,7 @@
 
 Segment retail customers based on real purchasing behavior using **RFM Analysis + HDBSCAN Clustering** — and visualize actionable insights through an interactive business dashboard.
 
-🔗 **Live Demo:** [customer-segmentation-data-analytics-project.streamlit.app](https://customer-segmentation-data-analytics-project.streamlit.app/)
+🔗 **Live Demo:** [customer-segmentation-data-analytics-project.streamlit.app](https://customer-intelligence-segamentation-churn-prediction-project.streamlit.app/)
 
 ---
 
